@@ -2,14 +2,14 @@
 import PackageDescription
 
 let package = Package(
-    name: "SwiftStomp",
+    name: "SwiftStompSwift",
     platforms: [
         .iOS(.v13),
         .macOS(.v10_15),
         .tvOS(.v13)
     ],
     products: [
-        .library(name: "SwiftStomp", targets: ["SwiftStomp"])
+        .library(name: "SwiftStompSwift", targets: ["SwiftStompSwift"])
     ],
     dependencies: [
         .package(url: "git@github.com:cj-tadas-razmislavicius/Reachability.swift.git",
@@ -17,7 +17,7 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "SwiftStomp",
+            name: "SwiftStompSwift",
             dependencies: [
                 .product(name: "ReachabilitySwift", package: "Reachability.swift"),
             ],
