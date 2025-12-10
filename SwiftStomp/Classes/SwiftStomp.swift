@@ -8,7 +8,7 @@
 
 import Foundation
 import OSLog
-import Reachability
+import ReachabilitySwift
 import Combine
 
 let NULL_CHAR = "\u{00}"

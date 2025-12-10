@@ -13,13 +13,13 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "git@github.com:cj-tadas-razmislavicius/Reachability.swift.git",
-                 .upToNextMajor(from: "5.3.2"))
+                 .upToNextMajor(from: "5.3.3"))
     ],
     targets: [
         .target(
             name: "SwiftStomp",
             dependencies: [
-                .product(name: "Reachability", package: "Reachability.swift"),
+                .product(name: "ReachabilitySwift", package: "Reachability.swift"),
             ],
             path: "SwiftStomp"
         )
