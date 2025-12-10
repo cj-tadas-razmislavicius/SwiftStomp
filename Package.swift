@@ -1,4 +1,4 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.10
 import PackageDescription
 
 let package = Package(
@@ -12,7 +12,8 @@ let package = Package(
         .library(name: "SwiftStomp", targets: ["SwiftStomp"])
     ],
     dependencies: [
-        .package(url: "https://github.com/ashleymills/Reachability.swift", .upToNextMajor(from: "5.2.1"))
+        .package(url: "git@github.com:cj-tadas-razmislavicius/Reachability.swift.git",
+                 .upToNextMajor(from: "5.3.2"))
     ],
     targets: [
         .target(
